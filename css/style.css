@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,18 +11,21 @@
 }
 
 :root {
-    --bg-color : #ffedd5;
-   
+    --bg-color: #ffe6e6;
+    --second-bg-color: #120545;
+    --text-color: #130e0e;
+    --main-color: #72706f;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-body{
+
+body {
     background: var(--bg-color);
     color: var(--text-color);
-
+    text-align: justify; /* Justify text for body */
 }
 
 section {
@@ -30,23 +34,24 @@ section {
     padding: 10rem 9% 2rem;
 }
 
-.header{
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- padding: 2rem 9%;
- background: var(--bg-color);
- display: flex;
- justify-content: space-between;
- align-items: center;
- z-index: 100;   
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 .header.sticky {
     border-bottom: .1rem solid rgba(48, 5, 5, 0.2);
 }
-.logo{
+
+.logo {
     text-decoration: none;
     font-size: 2.5rem;
     color: var(--text-color);
@@ -72,27 +77,26 @@ section {
     color: var(--text-color);
     display: none;
 }
+
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-
 @keyframes floatImage {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-2.4rem);
     }
+
     100% {
         transform: translateY(0);
     }
-
 }
-
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -102,15 +106,17 @@ section {
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 }
+
 span {
     color: var(--main-color);
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
 }
+
 .home-content p {
     font-size: 1.6rem;
 }
@@ -135,10 +141,9 @@ span {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
-
 }
 
-.btn{
+.btn {
     text-decoration: none;
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -152,24 +157,22 @@ span {
     transition: .5s ease;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: none;
 }
 
 /*education section */
-
 .education h2 {
     margin-top: 0.8rem;
     line-height: 1.2rem;
 }
 
-
 .heading {
     text-align: center;
     font-size: 4.5rem;
 }
-.college-details {
 
+.college-details {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -178,26 +181,27 @@ span {
 .college-details img {
     max-width: 100px;
     margin-right: 20px;
+}
 
-} 
-
-
-.education-content h2{
+.education-content h2 {
     text-align: center;
     line-height: 1.2;
 }
+
 .education-content h4 {
     font-size: 2.2rem;
     color: rgb(9, 2, 37);
 }
+
 .education-content .sub-heading {
     font-size: 2.6rem;
 }
-.education-content p{
-    font-size: 1.6rem;
-    text-align: justify;
 
+.education-content p {
+    font-size: 1.6rem;
+    text-align: justify; /* Justify text within education section */
 }
+
 .certifications a {
     text-decoration: none;
     color: rgb(19, 11, 0);
@@ -217,19 +221,20 @@ span {
 .experience .org-duration {
     font-size: 2.2rem;
 }
+
 .experience p {
     font-size: 1.6rem;
     line-height: 1.9;
 }
 
-.experience .spacing{
+.experience .spacing {
     margin-left: 10px;
-
 }
+
 /* Projects Section Styling */
 .projects h2 {
     margin-top: 0.8rem;
-    color: #333; /* Dark text for better readability */
+    color: #333;
 }
 
 .projects-container {
@@ -243,45 +248,45 @@ span {
 .projects-container .projects-box {
     flex: 1 1 30rem;
     background: linear-gradient(135deg, #007bff, #00d4ff);
-    color: white; /* Light gray background to contrast with white */
+    color: white;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid #ddd; /* Subtle border */
+    border: .2rem solid #ddd;
     transition: .5s ease;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .projects-container .projects-box:hover {
-    border-color: #007bff; /* Blue border on hover */
+    border-color: #007bff;
     transform: scale(1.02);
-    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.2); /* Enhanced shadow */
+    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.2);
 }
 
 .projects-box i {
     font-size: 7rem;
-    color: #007bff; /* Blue icon color */
+    color: #007bff;
 }
 
 .projects-box h3 {
     font-size: 2.6rem;
-    color: #ffffff; /* Dark text for contrast */
+    color: #ffffff;
 }
 
 .projects-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-    color: #e3f2fd; /* Medium-dark text for readability */
+    color: #e3f2fd;
 }
 
 .btn {
-    display: inline-block; 
-    margin-top: 15px; 
+    display: inline-block;
+    margin-top: 15px;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Blue button */
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
     color: white;
     font-weight: bold;
-    padding: 12px 24 px;
+    padding: 12px 24px;
     font-size: 1.6rem;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(255, 75, 43, 0.4);
@@ -289,27 +294,23 @@ span {
     transition: 0.3s ease-in-out;
 }
 
-
 .btn:hover {
-        background: linear-gradient(90deg, #ff4b2b, #ff416c);
-        transform: scale(1.1);
-        box-shadow: 0px 8px 15px rgba(255, 75, 43, 0.5);
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(255, 75, 43, 0.5);
 }
-    /* Darker blue on hover */
-
 
 .center-button {
     display: flex;
     justify-content: center;
-    margin-top: 20px; 
-    text-align: center; 
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* contact section */
-/* Contact Section */
 .contact h2 {
     margin-bottom: 3rem;
-    color: #333; /* Dark text for good readability */
+    color: #333;
 }
 
 .contact form {
@@ -330,8 +331,8 @@ span {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: white; /* White text for contrast */
-    background: #00d4ff; /* Light blue background */
+    color: white;
+    background: #00d4ff;
     border-radius: .8rem;
     margin: .7rem 0;
     border: none;
@@ -343,13 +344,13 @@ span {
 
 .contact form textarea {
     resize: none;
-    background: #00d4ff; /* Same light blue for textarea */
+    background: #00d4ff;
 }
 
 .contact form .btn {
     margin-top: 2rem;
     padding: 12px 24px;
-    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Vibrant pink-orange gradient */
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
     color: white;
     font-size: 1.6rem;
     font-weight: bold;
@@ -360,7 +361,7 @@ span {
 }
 
 .contact form .btn:hover {
-    background: linear-gradient(90deg, #ff4b2b, #ff416c); /* Invert gradient on hover */
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
     transform: scale(1.05);
 }
 
@@ -371,12 +372,12 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: linear-gradient(135deg, #007bff, #00d4ff); /* Blue gradient background */
+    background: linear-gradient(135deg, #007bff, #00d4ff);
 }
 
 .footer-text p {
     font-size: 1.6rem;
-    color: white; /* White text for footer */
+    color: white;
 }
 
 .footer-iconTop a {
@@ -385,154 +386,10 @@ span {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: #ff416c; /* Vibrant pink background */
+    background: #ff416c;
     border-radius: .8rem;
     transition: .5s ease;
 }
 
 .footer-iconTop a:hover {
-    box-shadow: 0 0 1rem #ff416c; /* Pink shadow on hover */
-}
-
-.footer-iconTop a i {
-    font-size: 2.4rem;
-    color: white; /* White icons for contrast */
-}
-
-/* Additional Styling for Links in Footer */
-.footer-text a {
-    color: #ffffff; /* White text for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.footer-text a:hover {
-    color: #00d4ff; /* Light blue hover effect */
-}
-
-
-
-/*breakpoints*/
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%;
-    }
-    section {
-        padding: 10rem 3% 2rem;
-    }
-    .education {
-        padding-bottom: 7rem;
-    }
-
-    .experience {
-        padding-bottom: 7rem;
-    }
-
-    .projects {
-        padding-bottom: 7rem;
-    }
-
-
-    .contact {
-        min-height: auto;
-    }
-
-    .footer {
-        padding: 2rem 3%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(240, 239, 239, 0.2);
-        box-shadow: 0 .5rem 1rem rgba(251, 250, 250, 0.2);
-        display: none;
-    }
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display:  block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    .home {
-        flex-direction: column;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-    .home-content h1 {
-        font-size: 5rem;
-
-    }
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .about {
-        flex-direction: column-reverse;
-
-    }
-
-    .about img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .projects h2 {
-        margin-bottom: 3rem;
-    }
-}
-
-
-@media (max-width: 450px){
-    html {
-        font-size: 50%;
-
-    }
-
-    .contact form .input-box input {
-        width: 100;
-    }
-}
-
-    @media (max-width: 365px) {
-        .home-img img {
-            width: 90vw;
-        }
-
-        .about-img img {
-            width: 90vw;
-        }
-
-        .footer {
-            flex-direction: column-reverse;
-        }
-
-        .footer p {
-            text-align: center;
-            margin-top: 2rem;
-        }
-    }
-@media screen and (min-width: 500px) {
-    .container {
-        display: flex;
-    }
-}
-
-
+    box-shadow: 0 0 1rem #
