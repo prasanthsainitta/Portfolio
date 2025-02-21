@@ -9,11 +9,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
-    --bg-color : #ffe6cc;
-    --second-bg-color : #120545;
-    --text-color: #130e0e;
-    --main-color: #72706f;
+body {
+    background-color: #121212; 
+    color: #FFFFFF;
+}
+
+
+body {
+    background: linear-gradient(135deg, #1F1C2C, #928DAB);
+    color: #FFFFFF;
+}
+
+
+
 }
 
 html{
