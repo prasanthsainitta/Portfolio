@@ -10,7 +10,7 @@
 }
 
 :root {
-    --bg-color : #ffe6c;
+    --bg-color : #ffe6cc;
     --second-bg-color : #120545;
     --text-color: #130e0e;
     --main-color: #72706f;
@@ -94,6 +94,32 @@ section {
     }
 
 }
+/* General Center Alignment */
+section {
+    text-align: center;
+}
+
+/* Flexbox for Centering */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures inline text is centered */
+    height: 100%; /* Adjust height if needed */
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+    .home, .about, .experience, .projects, .contact {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 
 .home-content h3 {
