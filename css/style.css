@@ -25,7 +25,7 @@ body {
     align-items: center; /* Center content */
     text-align: center;
     width: fit-content; /* Adjust width based on content */
-    max-width: 80%; /* Ensure it doesn't stretch too much */
+    max-width: 40%; /* Ensure it doesn't stretch too much */
     margin: auto;
 }
 
