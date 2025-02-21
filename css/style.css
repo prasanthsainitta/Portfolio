@@ -12,7 +12,7 @@
 body {
     background: linear-gradient(135deg, #1 A2980, #2 6D0CE);
     color: white; /* Ensures text is readable */
-    min-height: 100vh; /* Makes sure it covers the full screen */
+    
     display: flex;
     align-items: center;
     justify-content: center;
