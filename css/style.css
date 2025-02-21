@@ -10,15 +10,15 @@
 }
 
 body {
-    background-color: #121212; 
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #232526, #414345);
+    color: white; /* Ensures text is readable */
+    min-height: 100vh; /* Makes sure it covers the full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-
-body {
-    background: linear-gradient(135deg, #1F1C2C, #928DAB);
-    color: #FFFFFF;
-}
 
 
 
