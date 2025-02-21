@@ -10,7 +10,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #232526, #414345);
+    background: linear-gradient(135deg, #1 A2980, #2 6D0CE);
     color: white; /* Ensures text is readable */
     min-height: 100vh; /* Makes sure it covers the full screen */
     display: flex;
@@ -19,6 +19,21 @@ body {
     text-align: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    text-align: center;
+    width: fit-content; /* Adjust width based on content */
+    max-width: 80%; /* Ensure it doesn't stretch too much */
+    margin: auto;
+}
+
+.container img {
+    width: fit-content; /* Image adjusts to content */
+    max-width: 100%; /* Prevents image from overflowing */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
 
