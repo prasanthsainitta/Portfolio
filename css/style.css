@@ -31,7 +31,7 @@ body {
 
 .container img {
     width: fit-content; /* Image adjusts to content */
-    max-width: 100%; /* Prevents image from overflowing */
+    max-width: 60%; /* Prevents image from overflowing */
     height: auto; /* Maintain aspect ratio */
 }
 
