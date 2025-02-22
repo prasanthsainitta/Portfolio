@@ -11,8 +11,8 @@
 }
 /* 1️⃣ Define Global Variables at the Top */
 :root {
-    --bg-color: #E6F7FF; /* Brighter background */
-    --second-bg-color: #120545;
+    --bg-color: #FFFFFF;  /* White Background */
+    --footer-navbar-color: #007bff;  /* Set Footer and Navbar to the same color */
     --text-color: #130e0e;
     --main-color: #72706f;
     --navbar-footer-color: linear-gradient(135deg, #007bff, #00d4ff); /* Common navbar & footer color */
