@@ -9,24 +9,53 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
+/* 1️⃣ Define Global Variables at the Top */
 :root {
-    --bg-color: #F0F8FF; /* Light blue (brighter background) */
-    --navbar-footer-color: linear-gradient(135deg, #007bff, #00d4ff); /* Matching navbar & footer */
+    --bg-color: #E6F7FF; /* Brighter background */
+    --second-bg-color: #120545;
     --text-color: #130e0e;
-    --main-color: #004080; /* Deep blue for accents */
+    --main-color: #72706f;
+    --navbar-footer-color: linear-gradient(135deg, #007bff, #00d4ff); /* Common navbar & footer color */
 }
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+/* 2️⃣ Apply the Same Color to Navbar & Footer */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--navbar-footer-color); /* Apply same color as footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;   
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--navbar-footer-color); /* Same color as navbar */
+}
+
+/* 3️⃣ Ensure Content is Centered */
 body {
-    background: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-color);
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
+/* 4️⃣ Make Design Responsive */
+@media (max-width: 768px) {
+    .header, .footer {
+        padding: 1.5rem 5%;
+    }
+}
+
 
 /* General Section Styling */
 section {
