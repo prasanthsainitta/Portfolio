@@ -10,7 +10,7 @@
 }
 
 :root {
-    --bg-color : #ffe6cc;
+    --bg-color : #f;
     --second-bg-color : #120545;
     --text-color: #130e0e;
     --main-color: #72706f;
@@ -56,24 +56,18 @@ section {
     cursor: default;
 }
 
-
-.navbar {
-    background-color: #3498db; 
-    color: white; 
-    padding: 10px 20px; 
-    position: relative;
-    z-index: 1000; 
-}
-
 .navbar a {
-    color: white; 
     text-decoration: none;
-    margin-right: 15px;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
 }
 
-.navbar a:hover {
-    color: #f39c12; 
-
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
 
 #menu-icon {
     font-size: 3.6rem;
@@ -542,4 +536,5 @@ span {
         display: flex;
     }
 }
+
 
