@@ -10,7 +10,7 @@
 }
 
 :root {
-    --bg-color : #f;
+    --bg-color : #faf8f8;
     --second-bg-color : #120545;
     --text-color: #130e0e;
     --main-color: #72706f;
@@ -307,64 +307,7 @@ span {
     text-align: center; 
 }
 
-/* contact section */
-/* Contact Section */
-.contact h2 {
-    margin-bottom: 3rem;
-    color: #333; /* Dark text for good readability */
-}
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: white; /* White text for contrast */
-    background: #00d4ff; /* Light blue background */
-    border-radius: .8rem;
-    margin: .7rem 0;
-    border: none;
-}
-
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-    background: #00d4ff; /* Same light blue for textarea */
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    padding: 12px 24px;
-    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Vibrant pink-orange gradient */
-    color: white;
-    font-size: 1.6rem;
-    font-weight: bold;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.contact form .btn:hover {
-    background: linear-gradient(90deg, #ff4b2b, #ff416c); /* Invert gradient on hover */
-    transform: scale(1.05);
-}
 
 /* Footer */
 .footer {
