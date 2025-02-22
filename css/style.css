@@ -11,10 +11,10 @@
 }
 
 :root {
-    --bg-color: #D3D3D3;
-    --second-bg-color: #120545;
+    --bg-color: #F0F8FF; /* Light blue (brighter background) */
+    --navbar-footer-color: linear-gradient(135deg, #007bff, #00d4ff); /* Matching navbar & footer */
     --text-color: #130e0e;
-    --main-color: #72706f;
+    --main-color: #004080; /* Deep blue for accents */
 }
 
 html {
@@ -25,41 +25,37 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    text-align: center; /* Centering text by default */
+    text-align: center;
 }
 
+/* General Section Styling */
 section {
     min-height: 100vh;
-    background-color: var(--bg-color);
     padding: 10rem 9% 2rem;
-    text-align: justify; /* Justify content */
+    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Header */
+/* Navbar */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--navbar-footer-color); /* Matching navbar */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.header.sticky {
-    border-bottom: 0.1rem solid rgba(48, 5, 5, 0.2);
-}
-
 .logo {
     text-decoration: none;
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: white;
     font-weight: 600;
     cursor: default;
 }
@@ -67,19 +63,19 @@ section {
 .navbar a {
     text-decoration: none;
     font-size: 1.7rem;
-    color: var(--text-color);
+    color: white;
     margin-left: 4rem;
     transition: 0.3s;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--main-color);
+    color: #ffeb3b; /* Highlight effect */
 }
 
 #menu-icon {
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: white;
     display: none;
 }
 
@@ -110,85 +106,10 @@ section {
     max-width: 800px;
 }
 
-span {
-    color: var(--main-color);
-}
-
-/* Social Media */
-.social-media a {
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: 0.2rem solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2rem;
-    color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.5s ease;
-}
-
-.social-media a:hover {
-    background: var(--main-color);
-    color: var(--second-bg-color);
-    box-shadow: 0 0 1rem var(--main-color);
-}
-
-/* Education Section */
-.education h2 {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
-.college-details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.college-details img {
-    max-width: 100px;
-    margin-right: 20px;
-}
-
-/* Experience Section */
-.experience .internship-title {
-    color: rgb(131, 133, 133);
-    font-size: 2.2rem;
-    text-align: center;
-}
-
-.experience .org-duration {
-    font-size: 2.2rem;
-    text-align: center;
-}
-
-.experience p {
-    font-size: 1.6rem;
-    line-height: 1.9;
-    text-align: justify;
-}
-
-/* Projects Section */
-.projects h2 {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
-.projects-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
+/* Projects */
 .projects-container .projects-box {
     flex: 1 1 30rem;
-    background: linear-gradient(135deg, #007bff, #00d4ff);
+    background: var(--navbar-footer-color);
     color: white;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -209,7 +130,7 @@ span {
     align-items: center;
     flex-direction: column;
     padding: 2rem 9%;
-    background: linear-gradient(135deg, #007bff, #00d4ff);
+    background: var(--navbar-footer-color); /* Matching footer */
     text-align: center;
 }
 
@@ -226,10 +147,6 @@ span {
 
     section {
         padding: 8rem 5% 2rem;
-    }
-
-    .experience {
-        padding-bottom: 5rem;
     }
 
     .projects {
@@ -252,7 +169,7 @@ span {
         left: 0;
         width: 100%;
         padding: 1rem 5%;
-        background: var(--bg-color);
+        background: var(--navbar-footer-color);
         display: none;
     }
 
