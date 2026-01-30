@@ -1,157 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Prasanth Nitta | Senior SRE & DevOps Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Prasanth Nitta | Senior SRE</title>
 
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+<!-- Icons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --accent: #38bdf8;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* GLOBAL */
+section {
+  padding: 70px 18px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.hero .actions a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hero .actions a.primary {
+  background: var(--accent);
+  color: #000;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+  gap: 14px;
+}
+
+.skill {
+  text-align: center;
+  padding: 14px;
+  border-radius: 14px;
+  background: #020617;
+  border: 1px solid #1e293b;
+}
+
+.skill i {
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.skill span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+/* EXPERIENCE */
+.exp-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.exp-header i {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.exp-header h3 {
+  font-size: 1.05rem;
+}
+
+.exp-org {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 15px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+</style>
 </head>
 
 <body>
 
-<!-- ================= HOME ================= -->
-<section class="home" id="home">
-    <div class="home-content">
-        <h1><span class="highlight">SAI PRASANTH NITTA</span></h1>
-        <h2 class="role-title">Senior Site Reliability Engineer | DevOps | Cloud Platform Engineer</h2>
+<!-- HERO -->
+<section class="hero">
+  <h1>Sai Prasanth <span>Nitta</span></h1>
+  <h3>Senior Site Reliability Engineer • DevOps • Cloud Platforms</h3>
+  <p>
+    11+ years of experience designing, automating, securing, and operating
+    enterprise-scale cloud platforms across AWS and Azure with deep expertise
+    in Kubernetes, Terraform, CI/CD, and reliability engineering.
+  </p>
 
-        <p>
-            Senior Site Reliability Engineer with 11+ years of experience designing, automating,
-            securing, and operating mission-critical cloud platforms across AWS and Azure.
-            Specialized in Kubernetes, Terraform, CI/CD automation, GitOps, and enterprise-scale
-            reliability engineering.
-        </p>
-
-        <div class="btns">
-            <a href="mailto:Prasanthsvni@gmail.com" class="btn">Contact Me</a>
-            <a href="Sai Prasanth Nitta_SRE.docx" class="btn btn-outline" target="_blank">
-                Download Resume
-            </a>
-        </div>
-
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/n-s-p/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-            <a href="mailto:Prasanthsvni@gmail.com"><i class="bx bxl-gmail"></i></a>
-            <a href="https://github.com/prasanthsainitta" target="_blank"><i class="bx bxl-github"></i></a>
-        </div>
-    </div>
-
-    <div class="home-img">
-        <img src="images/SAI PRASANTH.jpg" alt="Sai Prasanth Nitta">
-        <p class="img-caption">Building Reliable, Secure & Scalable Cloud Platforms</p>
-    </div>
+  <div class="actions">
+    <a class="primary" href="mailto:Prasanthsvni@gmail.com">Contact</a>
+    <a href="Sai Prasanth Nitta_SRE.docx">Resume</a>
+    <a href="https://www.linkedin.com/in/n-s-p/" target="_blank">LinkedIn</a>
+  </div>
 </section>
 
-<!-- ================= EDUCATION ================= -->
-<section class="education" id="education">
-    <h2 class="sub-heading">🎓 Education</h2>
+<!-- SKILLS -->
+<section>
+  <h2>Technical Skills</h2>
 
-    <div class="education-grid">
-        <div class="edu-card">
-            <img src="images/kent_logo.jpg" alt="Kent State University" class="edu-logo">
-            <div class="edu-info">
-                <h4>Kent State University</h4>
-                <p><strong>Master of Science – Computer Science</strong></p>
-            </div>
-        </div>
-    </div>
+  <div class="skills-grid">
+    <div class="skill"><i class="fab fa-aws"></i><span>AWS</span></div>
+    <div class="skill"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+    <div class="skill"><i class="fab fa-google"></i><span>GCP</span></div>
+    <div class="skill"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+    <div class="skill"><i class="fa-brands fa-kubernetes"></i><span>Kubernetes</span></div>
+    <div class="skill"><i class="fa-solid fa-cubes"></i><span>Terraform</span></div>
+    <div class="skill"><i class="fa-solid fa-code-branch"></i><span>GitHub Actions</span></div>
+    <div class="skill"><i class="fa-solid fa-diagram-project"></i><span>Argo CD</span></div>
+    <div class="skill"><i class="fa-solid fa-chart-line"></i><span>Prometheus</span></div>
+    <div class="skill"><i class="fa-solid fa-eye"></i><span>Grafana</span></div>
+    <div class="skill"><i class="fa-solid fa-terminal"></i><span>Python</span></div>
+    <div class="skill"><i class="fa-solid fa-shield"></i><span>DevSecOps</span></div>
+  </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section class="skills" id="skills">
-    <h2 class="sub-heading">🛠 Technical Skills</h2>
+<!-- EXPERIENCE -->
+<section>
+  <h2>Professional Experience</h2>
 
-    <div class="cert-grid">
-        <div class="cert-card"><span>AWS, Azure, GCP</span></div>
-        <div class="cert-card"><span>Kubernetes (AKS / EKS), Docker, Helm</span></div>
-        <div class="cert-card"><span>Terraform, CloudFormation, Ansible</span></div>
-        <div class="cert-card"><span>GitHub Actions, Jenkins, Azure DevOps</span></div>
-        <div class="cert-card"><span>Argo CD, Flux, GitOps</span></div>
-        <div class="cert-card"><span>Prometheus, Grafana, ELK, Dynatrace</span></div>
-        <div class="cert-card"><span>Python, Bash, Go</span></div>
-        <div class="cert-card"><span>IAM, Vault, Security & Compliance</span></div>
+  <div class="card">
+    <div class="exp-header">
+      <i class="fa-solid fa-cloud"></i>
+      <h3>Senior Site Reliability Engineer</h3>
     </div>
+    <div class="exp-org">Verizon • Jan 2024 – Present</div>
+    <ul>
+      <li>Built enterprise CI/CD pipelines using GitHub Actions and reusable YAML templates.</li>
+      <li>Provisioned AKS, APIM, Azure Front Door using Terraform IaC.</li>
+      <li>Implemented GitOps using Argo CD and Flux.</li>
+      <li>Led observability, incident response, and SLO improvements.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="exp-header">
+      <i class="fa-solid fa-server"></i>
+      <h3>Senior SRE Platform Engineer</h3>
+    </div>
+    <div class="exp-org">Blue Cross Blue Shield • Oct 2022 – Jan 2024</div>
+    <ul>
+      <li>Managed PHI-compliant AKS platforms.</li>
+      <li>Integrated DevSecOps security scanning.</li>
+      <li>Automated platform onboarding using Terraform modules.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="exp-header">
+      <i class="fa-brands fa-aws"></i>
+      <h3>Cloud Infrastructure Engineer</h3>
+    </div>
+    <div class="exp-org">Capital One • May 2020 – Oct 2022</div>
+    <ul>
+      <li>Designed AWS Landing Zones using Control Tower.</li>
+      <li>Automated cost optimization using Python and Boto3.</li>
+      <li>Implemented Blue-Green deployments.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="exp-header">
+      <i class="fa-solid fa-gears"></i>
+      <h3>DevOps Engineer</h3>
+    </div>
+    <div class="exp-org">Amazon • Sep 2018 – May 2020</div>
+    <ul>
+      <li>Built Jenkins pipelines for large-scale microservices.</li>
+      <li>Implemented Canary deployments.</li>
+      <li>Centralized logging using ELK Stack.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="exp-header">
+      <i class="fa-solid fa-linux"></i>
+      <h3>Linux System Engineer</h3>
+    </div>
+    <div class="exp-org">Delta Airlines • Jan 2013 – Jul 2016</div>
+    <ul>
+      <li>Administered RHEL servers.</li>
+      <li>Automated operations using shell scripting.</li>
+      <li>Supported enterprise web platforms.</li>
+    </ul>
+  </div>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
-<section class="experience" id="experience">
-    <h2 class="sub-heading">💼 Professional Experience</h2>
-
-    <div class="experience-grid">
-
-        <div class="experience-card">
-            <i class="fa-solid fa-cloud experience-icon"></i>
-            <div>
-                <span class="experience-title">Senior Site Reliability Engineer</span>
-                <p class="experience-org">Verizon | Jan 2024 – Present</p>
-                <ul class="experience-details">
-                    <li>Designed enterprise CI/CD pipelines using GitHub Actions and reusable YAML workflows.</li>
-                    <li>Provisioned and managed AKS, Azure Front Door, APIM, VNets using Terraform.</li>
-                    <li>Built secure, scalable Kubernetes platforms supporting microservices.</li>
-                    <li>Implemented GitOps using Argo CD and Flux.</li>
-                    <li>Led production support, observability, and incident response.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="experience-card">
-            <i class="fa-solid fa-server experience-icon"></i>
-            <div>
-                <span class="experience-title">Senior SRE Platform Engineer</span>
-                <p class="experience-org">Blue Cross Blue Shield | Oct 2022 – Jan 2024</p>
-                <ul class="experience-details">
-                    <li>Built Terraform-based Azure platforms with security guardrails.</li>
-                    <li>Operated AKS clusters for PHI-regulated workloads.</li>
-                    <li>Integrated DevSecOps tools and automated security scanning.</li>
-                    <li>Created self-service CI/CD and platform templates.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="experience-card">
-            <i class="fa-solid fa-aws experience-icon"></i>
-            <div>
-                <span class="experience-title">Cloud Infrastructure Engineer</span>
-                <p class="experience-org">Capital One | May 2020 – Oct 2022</p>
-                <ul class="experience-details">
-                    <li>Designed AWS Landing Zones using Control Tower and CloudFormation.</li>
-                    <li>Automated cost optimization and security enforcement using Python.</li>
-                    <li>Implemented Blue-Green deployments and monitoring strategies.</li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ================= CERTIFICATIONS ================= -->
-<section class="certifications" id="certifications">
-    <h2 class="sub-heading">📜 Certifications</h2>
-
-    <div class="cert-grid">
-        <div class="cert-card">Microsoft Azure Administrator</div>
-        <div class="cert-card">AWS Certified Cloud Practitioner</div>
-        <div class="cert-card">Certified Kubernetes Expert</div>
-        <div class="cert-card">Terraform Associate</div>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-    <div class="footer-text">
-        <p>Engineering reliability, security, and scalability at enterprise scale.</p>
-    </div>
-    <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-    </div>
+<footer>
+  Engineering reliability, scalability & security at enterprise scale.
 </footer>
-
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="js/script.js"></script>
 
 </body>
 </html>
