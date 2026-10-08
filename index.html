@@ -6,7 +6,7 @@
   <meta name="description" content="Prasanth N - AI/ML Engineer specializing in GenAI, RAG, and LLM Systems">
   <meta name="keywords" content="Software Engineer, AI Engineer, ML Engineer, GenAI, RAG, LLM, Azure, Kubernetes">
   <meta name="author" content="Prasanth N">
-  
+
   <title>Prasanth N | AI/ML Engineer</title>
 
   <!-- Icons & Fonts -->
@@ -283,97 +283,68 @@
       transform: scale(1.05);
     }
 
-   <!-- EXPERIENCE -->
-<section id="experience">
-  <div class="experience-timeline">
+    /* EXPERIENCE */
+    .experience-timeline {
+      position: relative;
+    }
 
-    <!-- Wayfair -->
-    <div class="experience-item">
-      <div class="exp-header">
-        <i class="fas fa-briefcase"></i>
-        <div>
-          <h3>Software Development Engineer</h3>
-          <div class="exp-org">Wayfair, USA</div>
-        </div>
-      </div>
+    .experience-timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+    }
 
-      <div class="exp-duration">Feb 2025 - Present</div>
+    .exp-header {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
 
-      <ul>
-        <li>Designed and developed cloud-native microservices using Java, Python, and AWS (EC2, Lambda, DynamoDB) supporting large-scale e-commerce and logistics systems in a distributed computing environment.</li>
+    .exp-header i {
+      color: var(--accent);
+      font-size: 1.5rem;
+      margin-top: 5px;
+    }
 
-        <li>Built scalable RESTful APIs with Spring Boot and Flask, applying object-oriented design, data structures, and clean-code principles to ensure maintainable and high-performance services.</li>
+    .exp-org {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
 
-        <li>Engineered fault-tolerant distributed components for product, order, and inventory services, improving API throughput and system reliability by <b>35%</b>.</li>
+    .exp-duration {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
 
-        <li>Implemented SQL and NoSQL databases to handle high-volume real-time transactions with strong consistency, availability, and performance.</li>
+    ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
 
-        <li>Leveraged AI-powered developer tools and GenAI workflows for code generation, testing, documentation, and debugging, improving developer productivity and software quality.</li>
+    ul li {
+      margin-bottom: 10px;
+      color: var(--muted);
+      transition: 0.3s ease;
+    }
 
-        <li>Built and maintained CI/CD pipelines using Docker, GitHub Actions, and AWS CodePipeline, enabling automated builds, testing, and cloud deployments.</li>
+    ul li:hover {
+      color: var(--text);
+      padding-left: 5px;
+    }
 
-        <li>Delivered operational excellence through CloudWatch monitoring, log analysis, and on-call production support, ensuring system uptime and fast issue resolution.</li>
+    b {
+      color: var(--accent);
+      font-weight: 600;
+    }
 
-        <li>Actively participated in code reviews, technical design discussions, and documentation, ensuring scalable, secure, and cost-effective solutions.</li>
-      </ul>
-    </div>
-
-
-    <!-- KSU -->
-    <div class="experience-item">
-      <div class="exp-header">
-        <i class="fas fa-flask"></i>
-        <div>
-          <h3>Research Assistant</h3>
-          <div class="exp-org">KSU, USA</div>
-        </div>
-      </div>
-
-      <div class="exp-duration">Aug 2023 - Dec 2024</div>
-
-      <ul>
-        <li><b>Autonomous Agentic RAG Research Assistant</b> — LlamaIndex, OpenAI, Arize Phoenix.</li>
-
-        <li>Architected an autonomous Agentic RAG system using LlamaIndex, utilizing a Router Query Engine to dynamically route user queries across <b>2 distinct indexing strategies</b> (Vector for specific context vs. Summary for high-level insights) to optimize retrieval precision.</li>
-
-        <li>Engineered a multi-tool reasoning agent capable of synthesizing information from <b>3 disparate data sources</b> (Internal Technical Docs, Live Web Search, ArXiv Research Papers), enabling real-time cross-referencing of proprietary data with external academic validation.</li>
-
-        <li>Implemented full-stack observability with Arize AI Phoenix, establishing real-time tracing for agent decision trails to debug routing logic, validate tool selection, and ensure grounded, hallucination-free responses.</li>
-      </ul>
-    </div>
-
-
-    <!-- Persistent Systems -->
-    <div class="experience-item">
-      <div class="exp-header">
-        <i class="fas fa-briefcase"></i>
-        <div>
-          <h3>Jr Software Development Engineer</h3>
-          <div class="exp-org">Persistent System, INDIA</div>
-        </div>
-      </div>
-
-      <div class="exp-duration">Jan 2021 - Jun 2023</div>
-
-      <ul>
-        <li>Engineered high-performance backend services and RESTful APIs using Java, Spring Boot, and TypeScript to support large-scale cloud platforms handling complex enterprise-grade business transactions reliably.</li>
-
-        <li>Architected and deployed cloud-native microservice solutions on AWS, enabling horizontal scalability, high availability, service resilience, and seamless communication across distributed backend systems in production environments.</li>
-
-        <li>Leveraged data structures, algorithms, and object-oriented design principles to optimize request routing, caching strategies, and distributed transaction workflows for improved throughput, latency, and overall system reliability.</li>
-
-        <li>Managed SQL and NoSQL databases including PostgreSQL and MongoDB to support high-volume, low-latency transactional and analytical workloads across highly distributed enterprise application environments.</li>
-
-        <li>Automated build, test, and deployment workflows by implementing CI/CD pipelines using Jenkins, Docker, and Git, ensuring release stability, faster delivery cycles, and minimal production downtime.</li>
-
-        <li>Resolved complex distributed system, performance, and API reliability issues by performing deep debugging, root-cause analysis, and centralized log monitoring across multiple high-traffic production services.</li>
-
-        <li>Partnered with QA, DevOps, and product teams in a fast-paced Agile SDLC to deliver scalable, secure, and production-ready features aligned with evolving business and customer requirements.</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
     /* PROJECTS */
     .projects-grid {
       display: grid;
@@ -771,6 +742,7 @@
 <header>
   <div class="navbar-container">
     <a href="#" class="logo">Prasanth<span style="color: var(--accent);">.</span></a>
+
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -781,71 +753,96 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
     <div class="menu-icon">
       <i class="bx bx-menu-alt-right"></i>
     </div>
   </div>
 </header>
 
+
 <!-- HERO SECTION -->
 <section class="hero" id="home">
   <h1>Prasanth <span>N</span></h1>
+
   <h3>AI/ML Engineer • GenAI • RAG • LLM Systems</h3>
 
   <p>
-    I build production-grade Generative AI systems that scale. 
+    I build production-grade Generative AI systems that scale.
     Delivering LLM platforms, RAG pipelines, and ML systems.
-    Proven impact: 40% faster fraud detection, 35% automation gains, and sub-3% hallucination in production AI.
+    Proven impact: 40% faster fraud detection, 35% automation gains,
+    and sub-3% hallucination in production AI.
   </p>
 
   <div class="actions">
     <a href="#contact" class="primary">Get in Touch</a>
     <a href="#projects">View Projects</a>
-    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://linkedin.com/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
   </div>
 </section>
+
 
 <!-- ABOUT SECTION -->
 <section id="about">
   <h2>About Me</h2>
+
   <div class="card reveal">
     <h3>Building AI Systems at Scale</h3>
+
     <p>
-      I'm passionate about creating production-ready AI systems that solve real-world problems. With 4+ years of experience in Machine Learning and AI, I specialize in designing and deploying large-scale language models, RAG pipelines, and intelligent automation systems.
+      I'm passionate about creating production-ready AI systems that solve
+      real-world problems. With 4+ years of experience in Machine Learning
+      and AI, I specialize in designing and deploying large-scale language
+      models, RAG pipelines, and intelligent automation systems.
     </p>
+
     <p style="margin-top: 15px;">
-      My focus is on building systems that are not just powerful, but also reliable, explainable, and cost-effective. From fraud detection to autonomous workflows, I've helped organizations transform their operations with AI.
+      My focus is on building systems that are not just powerful, but also
+      reliable, explainable, and cost-effective. From fraud detection to
+      autonomous workflows, I've helped organizations transform their
+      operations with AI.
     </p>
   </div>
 
+
   <!-- STATS -->
   <div class="stats-grid">
+
     <div class="stat-card reveal">
       <div class="stat-number">40%</div>
       <div class="stat-label">Faster Fraud Detection</div>
     </div>
+
     <div class="stat-card reveal">
       <div class="stat-number">35%</div>
       <div class="stat-label">Automation Gains</div>
     </div>
+
     <div class="stat-card reveal">
       <div class="stat-number">&lt;3%</div>
       <div class="stat-label">Hallucination Rate</div>
     </div>
+
     <div class="stat-card reveal">
       <div class="stat-number">10K+</div>
       <div class="stat-label">Daily AI Decisions</div>
     </div>
+
   </div>
 </section>
+
 
 <!-- SKILLS SECTION -->
 <section id="skills">
   <h2>Core Expertise</h2>
 
   <div class="skills-container">
+
     <div class="skill-category">
       <h3>🤖 AI & ML</h3>
+
       <div class="skills-grid">
         <div class="skill">LLMs (GPT-4)</div>
         <div class="skill">RAG Systems</div>
@@ -856,8 +853,10 @@
       </div>
     </div>
 
+
     <div class="skill-category">
       <h3>☁️ Cloud & DevOps</h3>
+
       <div class="skills-grid">
         <div class="skill">Azure</div>
         <div class="skill">AWS</div>
@@ -868,8 +867,10 @@
       </div>
     </div>
 
+
     <div class="skill-category">
       <h3>📊 Data & Databases</h3>
+
       <div class="skills-grid">
         <div class="skill">Vector DBs</div>
         <div class="skill">Snowflake</div>
@@ -880,8 +881,10 @@
       </div>
     </div>
 
+
     <div class="skill-category">
       <h3>🛠️ Tools & Frameworks</h3>
+
       <div class="skills-grid">
         <div class="skill">FastAPI</div>
         <div class="skill">Kafka</div>
@@ -891,221 +894,528 @@
         <div class="skill">Git</div>
       </div>
     </div>
+
   </div>
 </section>
+
 
 <!-- EXPERIENCE SECTION -->
 <section id="experience">
   <h2>Professional Experience</h2>
 
   <div class="experience-timeline">
+
+    <!-- WAYFAIR -->
     <div class="card reveal">
+
       <div class="exp-header">
-        <i class="fa-solid fa-brain"></i>
+        <i class="fa-solid fa-code"></i>
+
         <div>
-          <h3>Senior AI/ML Engineer</h3>
-          <div class="exp-org">GEICO</div>
-          <div class="exp-duration">2024 – Present</div>
+          <h3>Software Development Engineer</h3>
+          <div class="exp-org">Wayfair, USA</div>
+          <div class="exp-duration">Feb 2025 - Present</div>
         </div>
       </div>
 
       <ul>
-        <li>Built large-scale RAG platform processing <b>10,000+ daily claims</b> using GPT-4 + Azure AI Search</li>
-        <li>Reduced fraud investigation time by <b>40%</b> with grounded AI retrieval</li>
-        <li>Engineered LangGraph agent workflows cutting manual effort by <b>35%</b></li>
-        <li>Reduced hallucination rate from 14% → <b>&lt;3%</b> using structured prompting</li>
-        <li>Deployed AKS-based inference system with <b>sub-800ms latency</b> at scale</li>
+        <li>
+          Designed and developed cloud-native microservices using Java,
+          Python, and AWS (EC2, Lambda, DynamoDB) supporting large-scale
+          e-commerce and logistics systems in a distributed computing
+          environment.
+        </li>
+
+        <li>
+          Built scalable RESTful APIs with Spring Boot and Flask, applying
+          object-oriented design, data structures, and clean-code principles
+          to ensure maintainable and high-performance services.
+        </li>
+
+        <li>
+          Engineered fault-tolerant distributed components for product,
+          order, and inventory services, improving API throughput and
+          system reliability by <b>35%</b>.
+        </li>
+
+        <li>
+          Implemented SQL and NoSQL databases to handle high-volume
+          real-time transactions with strong consistency, availability,
+          and performance.
+        </li>
+
+        <li>
+          Leveraged AI-powered developer tools and GenAI workflows for
+          code generation, testing, documentation, and debugging,
+          improving developer productivity and software quality.
+        </li>
+
+        <li>
+          Built and maintained CI/CD pipelines using Docker, GitHub Actions,
+          and AWS CodePipeline, enabling automated builds, testing,
+          and cloud deployments.
+        </li>
+
+        <li>
+          Delivered operational excellence through CloudWatch monitoring,
+          log analysis, and on-call production support, ensuring system
+          uptime and fast issue resolution.
+        </li>
+
+        <li>
+          Actively participated in code reviews, technical design discussions,
+          and documentation, ensuring scalable, secure, and cost-effective
+          solutions.
+        </li>
       </ul>
+
     </div>
 
+
+    <!-- KSU -->
     <div class="card reveal">
+
       <div class="exp-header">
-        <i class="fa-solid fa-chart-line"></i>
+        <i class="fa-solid fa-flask"></i>
+
         <div>
-          <h3>Machine Learning Engineer</h3>
-          <div class="exp-org">Maximus</div>
-          <div class="exp-duration">2021 – 2023</div>
+          <h3>Research Assistant</h3>
+          <div class="exp-org">KSU, USA</div>
+          <div class="exp-duration">Aug 2023 - Dec 2024</div>
         </div>
       </div>
 
       <ul>
-        <li>Built ML prioritization model <b>(F1: 0.84)</b> for healthcare case processing</li>
-        <li>Reduced manual review effort by <b>30%</b> via NLP + retrieval systems</li>
-        <li>Designed real-time <b>Kafka + Spark</b> feature pipelines</li>
-        <li>Deployed models on SageMaker with <b>sub-120ms latency</b></li>
+
+        <li>
+          <b>Autonomous Agentic RAG Research Assistant</b> —
+          LlamaIndex, OpenAI, Arize Phoenix.
+        </li>
+
+        <li>
+          Architected an autonomous Agentic RAG system using LlamaIndex,
+          utilizing a Router Query Engine to dynamically route user queries
+          across <b>2 distinct indexing strategies</b> (Vector for specific
+          context vs. Summary for high-level insights) to optimize retrieval
+          precision.
+        </li>
+
+        <li>
+          Engineered a multi-tool reasoning agent capable of synthesizing
+          information from <b>3 disparate data sources</b> (Internal Technical
+          Docs, Live Web Search, ArXiv Research Papers), enabling real-time
+          cross-referencing of proprietary data with external academic
+          validation.
+        </li>
+
+        <li>
+          Implemented full-stack observability with Arize AI Phoenix,
+          establishing real-time tracing for agent decision trails to debug
+          routing logic, validate tool selection, and ensure grounded,
+          hallucination-free responses.
+        </li>
+
       </ul>
+
     </div>
 
+
+    <!-- PERSISTENT SYSTEMS -->
     <div class="card reveal">
+
       <div class="exp-header">
-        <i class="fa-solid fa-database"></i>
+        <i class="fa-solid fa-server"></i>
+
         <div>
-          <h3>Data Engineer</h3>
-          <div class="exp-org">IBM</div>
-          <div class="exp-duration">2020 – 2021</div>
+          <h3>Jr Software Development Engineer</h3>
+          <div class="exp-org">Persistent System, INDIA</div>
+          <div class="exp-duration">Jan 2021 - Jun 2023</div>
         </div>
       </div>
 
       <ul>
-        <li>Migrated <b>2TB data</b> to Snowflake with <b>99.9% accuracy</b></li>
-        <li>Reduced data latency from <b>6 hours → under 10 minutes</b></li>
-        <li>Built real-time ingestion pipelines using <b>Snowpipe + Lambda</b></li>
+
+        <li>
+          Engineered high-performance backend services and RESTful APIs
+          using Java, Spring Boot, and TypeScript to support large-scale
+          cloud platforms handling complex enterprise-grade business
+          transactions reliably.
+        </li>
+
+        <li>
+          Architected and deployed cloud-native microservice solutions
+          on AWS, enabling horizontal scalability, high availability,
+          service resilience, and seamless communication across distributed
+          backend systems in production environments.
+        </li>
+
+        <li>
+          Leveraged data structures, algorithms, and object-oriented design
+          principles to optimize request routing, caching strategies, and
+          distributed transaction workflows for improved throughput,
+          latency, and overall system reliability.
+        </li>
+
+        <li>
+          Managed SQL and NoSQL databases including PostgreSQL and MongoDB
+          to support high-volume, low-latency transactional and analytical
+          workloads across highly distributed enterprise application
+          environments.
+        </li>
+
+        <li>
+          Automated build, test, and deployment workflows by implementing
+          CI/CD pipelines using Jenkins, Docker, and Git, ensuring release
+          stability, faster delivery cycles, and minimal production downtime.
+        </li>
+
+        <li>
+          Resolved complex distributed system, performance, and API
+          reliability issues by performing deep debugging, root-cause
+          analysis, and centralized log monitoring across multiple
+          high-traffic production services.
+        </li>
+
+        <li>
+          Partnered with QA, DevOps, and product teams in a fast-paced
+          Agile SDLC to deliver scalable, secure, and production-ready
+          features aligned with evolving business and customer requirements.
+        </li>
+
       </ul>
+
     </div>
+
   </div>
 </section>
+
 
 <!-- PROJECTS SECTION -->
 <section id="projects">
   <h2>Featured Projects</h2>
 
   <div class="projects-grid">
+
+
+    <!-- AGENTIC RAG -->
     <div class="project-card reveal">
+
       <div class="project-image">🤖</div>
-      <div class="project-content">
-        <h4>AI-Powered Claims Processing</h4>
-        <p>Built a large-scale RAG system that processes insurance claims 40% faster using GPT-4 and semantic search.</p>
-        <div class="project-tags">
-          <span class="tag">GenAI</span>
-          <span class="tag">RAG</span>
-          <span class="tag">Azure</span>
-        </div>
-        <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="project-card reveal">
-      <div class="project-image">📊</div>
       <div class="project-content">
-        <h4>ML Prioritization Pipeline</h4>
-        <p>Healthcare ML model with F1 score of 0.84, reducing manual review by 30% using NLP and feature engineering.</p>
-        <div class="project-tags">
-          <span class="tag">ML</span>
-          <span class="tag">NLP</span>
-          <span class="tag">SageMaker</span>
-        </div>
-        <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-external-link-alt"></i> Paper</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="project-card reveal">
-      <div class="project-image">⚡</div>
-      <div class="project-content">
-        <h4>Real-time Data Pipeline</h4>
-        <p>Kafka + Spark streaming architecture processing 10K+ events/sec with sub-10 min latency to Snowflake.</p>
-        <div class="project-tags">
-          <span class="tag">Kafka</span>
-          <span class="tag">Spark</span>
-          <span class="tag">Snowflake</span>
-        </div>
-        <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-external-link-alt"></i> Docs</a>
-        </div>
-      </div>
-    </div>
+        <h4>Agentic RAG</h4>
 
-    <div class="project-card reveal">
-      <div class="project-image">🔍</div>
-      <div class="project-content">
-        <h4>LangGraph Agent Framework</h4>
-        <p>Autonomous workflow system using LangGraph, reducing manual effort by 35% with intelligent routing.</p>
-        <div class="project-tags">
-          <span class="tag">LangGraph</span>
-          <span class="tag">Agents</span>
-          <span class="tag">Python</span>
-        </div>
-        <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
-        </div>
-      </div>
-    </div>
+        <p>
+          Architected an autonomous Agentic RAG system using LlamaIndex
+          and LangChain, dynamically routing user queries across semantic
+          retrieval, document search, and analytical tools to improve
+          contextual response generation.
+        </p>
 
-    <div class="project-card reveal">
-      <div class="project-image">🏗️</div>
-      <div class="project-content">
-        <h4>MLOps Platform</h4>
-        <p>End-to-end ML infrastructure using MLflow, Kubernetes, and FastAPI for model deployment and monitoring.</p>
+        <p>
+          Engineered a multi-tool reasoning agent integrating vector search,
+          document retrieval, and external knowledge sources, enabling
+          multi-step research and evidence-grounded responses across
+          heterogeneous data.
+        </p>
+
+        <p>
+          Implemented an end-to-end RAG pipeline covering document ingestion,
+          intelligent chunking, transformer-based embeddings, vector indexing,
+          context retrieval, prompt construction, and LLM generation.
+        </p>
+
+        <p>
+          Developed FastAPI-based inference services and evaluation workflows
+          to measure retrieval relevance, response groundedness, and answer
+          quality while reducing unsupported LLM responses.
+        </p>
+
         <div class="project-tags">
-          <span class="tag">MLOps</span>
-          <span class="tag">Kubernetes</span>
+          <span class="tag">LlamaIndex</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">Vector Database</span>
           <span class="tag">FastAPI</span>
         </div>
+
         <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-external-link-alt"></i> Docs</a>
+          <a href="#">
+            <i class="fab fa-github"></i> Code
+          </a>
         </div>
+
       </div>
     </div>
 
+
+    <!-- END-TO-END MACHINE LEARNING PIPELINE -->
     <div class="project-card reveal">
-      <div class="project-image">🔐</div>
+
+      <div class="project-image">⚙️</div>
+
       <div class="project-content">
-        <h4>Semantic Search Engine</h4>
-        <p>Vector-based search system using embeddings and Pinecone, enabling 98% retrieval accuracy.</p>
+
+        <h4>End-to-End Machine Learning Pipeline</h4>
+
+        <p>
+          Architected an end-to-end ML pipeline spanning data ingestion,
+          preprocessing, feature engineering, model training, hyperparameter
+          tuning, evaluation, model registry, and production inference.
+        </p>
+
+        <p>
+          Developed and compared Logistic Regression, Random Forest, and
+          gradient-boosting models using cross-validation, precision, recall,
+          F1-score, and ROC-AUC to select the optimal production model.
+        </p>
+
+        <p>
+          Integrated MLflow for experiment tracking, metric visualization,
+          model versioning, and reproducible model promotion across
+          development and deployment workflows.
+        </p>
+
+        <p>
+          Deployed the trained model as a FastAPI REST service, containerized
+          with Docker, and integrated AWS-based batch inference for scalable
+          prediction workloads.
+        </p>
+
         <div class="project-tags">
-          <span class="tag">Vector DB</span>
-          <span class="tag">Embeddings</span>
-          <span class="tag">Pinecone</span>
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">MLflow</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Docker</span>
+          <span class="tag">AWS</span>
         </div>
+
         <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+          <a href="#">
+            <i class="fab fa-github"></i> Code
+          </a>
         </div>
+
       </div>
     </div>
+
+
+    <!-- HEALTHCARE FRAUD & ANOMALY DETECTION -->
+    <div class="project-card reveal">
+
+      <div class="project-image">🔐</div>
+
+      <div class="project-content">
+
+        <h4>Healthcare Fraud &amp; Anomaly Detection</h4>
+
+        <p>
+          Developed an end-to-end fraud detection system processing
+          healthcare claims data, combining supervised classification and
+          anomaly-detection techniques to identify high-risk claims and
+          suspicious provider behavior.
+        </p>
+
+        <p>
+          Engineered transactional, provider, and behavioral features using
+          Python, SQL, and PySpark while addressing severe class imbalance
+          through sampling and threshold optimization.
+        </p>
+
+        <p>
+          Evaluated Logistic Regression, tree-based models, and
+          anomaly-detection approaches using precision, recall, F1-score,
+          ROC-AUC, and false-positive analysis to optimize fraud detection
+          performance.
+        </p>
+
+        <p>
+          Integrated model inference with AWS SageMaker and automated
+          preprocessing/scoring workflows to support scalable batch
+          prediction and repeatable model execution.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">PySpark</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">AWS SageMaker</span>
+        </div>
+
+        <div class="project-links">
+          <a href="#">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- CUSTOMER DEMAND FORECASTING & SEGMENTATION -->
+    <div class="project-card reveal">
+
+      <div class="project-image">📈</div>
+
+      <div class="project-content">
+
+        <h4>Customer Demand Forecasting &amp; Segmentation</h4>
+
+        <p>
+          Developed customer segmentation models using transactional and
+          behavioral features to identify distinct purchasing patterns and
+          support targeted customer strategies.
+        </p>
+
+        <p>
+          Built demand forecasting pipelines using historical sales and
+          inventory data, applying feature engineering, time-series analysis,
+          and model validation to improve inventory planning accuracy.
+        </p>
+
+        <p>
+          Performed statistical analysis and model comparison to identify
+          predictive drivers of customer behavior, demand fluctuations,
+          and purchasing patterns.
+        </p>
+
+        <p>
+          Integrated model outputs with Snowflake datasets and analytical
+          dashboards, enabling stakeholders to consume predictive insights
+          alongside operational metrics.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Snowflake</span>
+        </div>
+
+        <div class="project-links">
+          <a href="#">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- CONTACT SECTION -->
 <section id="contact">
   <h2>Get In Touch</h2>
 
   <div class="contact-form">
+
     <form id="contactForm">
+
       <div class="form-group">
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your name">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Your name"
+        >
       </div>
 
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required placeholder="your@email.com">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="your@email.com"
+        >
       </div>
 
       <div class="form-group">
         <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required placeholder="Project inquiry">
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          placeholder="Project inquiry"
+        >
       </div>
 
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+        <textarea
+          id="message"
+          name="message"
+          required
+          placeholder="Tell me about your project..."
+        ></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">Send Message</button>
+      <button type="submit" class="submit-btn">
+        Send Message
+      </button>
+
       <div class="form-message" id="formMessage"></div>
+
     </form>
+
   </div>
 </section>
 
+
 <!-- FOOTER -->
 <footer>
+
   <div class="social-links">
-    <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-    <a href="mailto:Saiprasanth533@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+
+    <a
+      href="https://github.com/"
+      target="_blank"
+      title="GitHub"
+    >
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a
+      href="https://linkedin.com/"
+      target="_blank"
+      title="LinkedIn"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a
+      href="https://twitter.com/"
+      target="_blank"
+      title="Twitter"
+    >
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a
+      href="mailto:Saiprasanth533@gmail.com"
+      title="Email"
+    >
+      <i class="fas fa-envelope"></i>
+    </a>
+
   </div>
-  <p>© 2024 Prasanth N. Building intelligent systems that scale with reliability, explainability, and impact.</p>
+
+  <p>
+    © 2024 Prasanth N. Building intelligent systems that scale with
+    reliability, explainability, and impact.
+  </p>
+
 </footer>
+
 
 <!-- JavaScript -->
 <script src="script.js"></script>
